@@ -9,7 +9,7 @@ describe('Testing timing', () => {
         jest.useRealTimers()
     })
 
-    it('Should increment value periodically', () => {
+    it('Should increment value periodically - without waiting for interval ticks', () => {
         jest.useFakeTimers();
 
         run()
